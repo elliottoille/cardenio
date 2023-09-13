@@ -1,0 +1,8 @@
+@font-face {
+	font-family: Clinton;
+	src: url(../fonts/ClintonBold.ttf);
+}
+
+h1 {
+	font-family: Clinton;
+}
