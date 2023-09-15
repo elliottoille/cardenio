@@ -1,8 +1,4 @@
-@font-face {
-	font-family: Clinton;
-	src: url(../fonts/ClintonBold.ttf);
-}
-
-h1 {
-	font-family: Clinton;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+* { font-family: 'Roboto Mono'; }
+body { margin: 0; padding: 0; height: 100%; }
+html { height: 100%; }

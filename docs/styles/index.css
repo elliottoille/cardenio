@@ -1,0 +1,7 @@
+.content { height: auto; width: 70%; margin: 0 auto; }
+#navigation-left { width: 100%; height: 72px; list-style: none; margin: 0; padding: 0; }
+#navigation-left li { width: auto; float: left; padding: 0 40px 0 0; }
+#navigation-left a { text-decoration: none; color: rgba(1,1,1,1); font-size: 16pt; line-height: 72px; }
+#navigation-left a:hover { color: rgba(1,1,1,0.5); }
+.main{ margin: 0; width: 100%; min-height: calc(100vh - 72px); }
+#main-frame { width: 100%; margin: 0; height: calc(100vh - 72px); }

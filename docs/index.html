@@ -2,10 +2,23 @@
 <html>
 	<head>
 		<title>Cardenio</title>
-		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/index.css">
 	</head>
 
 	<body>
-		<h1>Cardenio</h1>
+		<div class="content">
+			<div class="navigation">
+				<ul id="navigation-left">
+					<li><a href="pages/home.html" target="main-frame">home</a></li>
+					<li><a href="pages/posts.html" target="main-frame">posts</a></li>
+					<li><a href="pages/about.html" target="main-frame">about</a></li>
+				</ul>
+			</div>
+
+			<div class="main">
+				<iframe src="pages/home.html" id="main-frame" name="main-frame" frameborder=0></iframe>
+			</div>
+		</div>
 	</body>
-</html>`
+</html>
