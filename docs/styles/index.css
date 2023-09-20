@@ -1,11 +1,12 @@
 * { overflow: hidden; }
 .content { height: auto; max-width: 70%; margin: 0 auto; display: flex; flex-direction: column; }
+.navigation { min-height: 72px; }
 #navigation-left { position: absolute; width: 100%; height: 72px; list-style: none; vertical-align: middle; margin: 0; padding: 0; }
 #navigation-left li { width: auto; float: left; padding: 0 40px 0 0; }
 #navigation-left a { text-decoration: none; color: rgba(1,1,1,1); font-size: 16pt; line-height: 72px; font-weight: 700; }
 #navigation-left a:hover { color: rgba(1,1,1,0.5); }
-#navigation-right { float: right; text-decoration: none; vertical-align: middle; }
-#navigation-right li { font-size: 24pt; }
+#navigation-right { float: right; text-decoration: none; margin: 0; vertical-align: middle; height: 100%; }
+#navigation-right li { font-size: 24pt; vertical-align: middle; justify-content: center; flex-direction: column; height: 100%;}
 .main { margin: 0; width: 100%; min-height: calc(100vh - 144px); }
 #main-frame { width: 100%; margin: 0; height: 100%; }
 footer { position: relative; bottom: 0; width: 100%; height: 72px; }
@@ -18,8 +19,12 @@ footer #footer-ul-right { list-style-type: none; margin 0; float: right; padding
 #footer-ul-right li { vertical-align: middle; line-height: 72px; }
 #fulr-b { display: block; }
 #fulr-s { display: none; }
+#link-b { display: block; }
+#link-s { display: none; }
+#navr-b { display: flex; line-height: 72px; }
+#navr-s { display: none; font-size: 20pt; line-height: 24px; }
 @media screen and (max-width: 800px) {
-	.content { max-width: 100%; }
+	.content { max-width: 98%; }
 }
 @media screen and (max-width: 1200px) {
 	#navigation-left a { font-size: 16pt; }
@@ -27,4 +32,12 @@ footer #footer-ul-right { list-style-type: none; margin 0; float: right; padding
 	#footer-ul a { font-size: 14pt; }
 	#fulr-b { display: none; }
 	#fulr-s { display: block; }
+}
+@media screen and (max-width: 600px) {
+	#link-b { display: none; }
+	#link-s { display: block; }
+}
+@media screen and (max-width: 480px) {
+	#navr-b { display: none; }
+	#navr-s { display: flex; }
 }
